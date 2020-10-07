@@ -1,6 +1,6 @@
-[![HitCount](http://hits.dwyl.com/swapnanildutta/CoronavirusDatabase.svg)](http://hits.dwyl.com/swapnanildutta/CoronavirusDatabase)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![!](https://img.shields.io/github/repo-size/swapnanildutta/CoronavirusDatabase)
+[![HitCount](https://hits.dwyl.com/swapnanildutta/CoronavirusDatabase.svg)](https://hits.dwyl.com/swapnanildutta/CoronavirusDatabase)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+![Repo Size](https://img.shields.io/github/repo-size/swapnanildutta/CoronavirusDatabase)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
