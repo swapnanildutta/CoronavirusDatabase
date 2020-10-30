@@ -14,11 +14,11 @@ def all():
 @app.route('/<country>')
 def country(country):
     value = data.get(country)
-    if value == None:
+    if value is None:
         return {"Error": "There is no such country.", "Value": country}, 404
     else:
-        return data[country], 200
+        return value, 200
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(debug=True)
