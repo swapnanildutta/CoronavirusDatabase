@@ -1,15 +1,10 @@
 # imports
 import requests
 import json
-import os
-import time
-# beautifulsoup4
 from bs4 import BeautifulSoup
 
 
 # base url for the data
-
-# _url = 'https://google.com/covid19-map/?hl=en'
 _url = 'https://www.worldometers.info/coronavirus/'
 
 
@@ -29,7 +24,6 @@ def check():
                 locations.append(col.find('a').text)
             data.append(col.text)
 
-    continent = data[:103]
     country_data = data[104]
     print(country_data)
     for loc in locations:
@@ -52,22 +46,4 @@ def check():
         json.dump(_update, f)
 
 
-'''
-        if len(col)!=5:
-            continue
-
-        location = col[0].text
-
-        _update.update({
-            location: {
-                "Cnf": col[1].text,
-                "CpM": col[2].text,
-                "Rec": col[3].text,
-                "Dth": col[4].text
-            }
-        })
-
-    with open('worldwide.json', 'w') as  f:
-        json.dump(_update, f)
-'''
 check()
