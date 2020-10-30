@@ -32,10 +32,18 @@ for key in data.keys():
     # print(key,"\t",data[key]['Cnf'],"\t",data[key]['CpM'],
     #      "\t",data[key]['Rec'],"\t",data[key]['Dth'])
 
-    cur.execute(('INSERT OR IGNORE INTO COVID19_Toll (country, tot_cases, new_cases, tot_death,'
-                 ('new_death, tot_recovery, active_cases, serious_cases, cases_per_M, death_per_M,')
-                 ('tot_test, test_per_M) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?')),
-                (key, data[key]['TC'], data[key]['NC'], data[key]['TD'], data[key]['ND'],
-                 data[key]['TR'], data[key]['AC'], data[key]['SC'], data[key]['TCpM'], data[key]['DpM'], data[key]['TT'], data[key]['TpM']), )
+    command = (
+        'INSERT OR IGNORE INTO COVID19_Toll (country, tot_cases, new_cases, '
+        'tot_death, new_death, tot_recovery, active_cases, serious_cases, cases_per_M, death_per_M,'
+        'tot_test, test_per_M) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+    )
+
+    cur.execute(
+        command,
+        (
+            key, data[key]['TC'], data[key]['NC'], data[key]['TD'], data[key]['ND'],
+            data[key]['TR'], data[key]['AC'], data[key]['SC'], data[key]['TCpM'], data[key]['DpM'], data[key]['TT'], data[key]['TpM']
+        )
+    )
 
 conn.commit()
