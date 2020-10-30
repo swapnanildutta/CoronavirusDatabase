@@ -35,14 +35,7 @@
 
 ## About The Project
 
-<p align="center">
-  <a href="https://github.com/swapnanildutta/CoronavirusDatabase">
-    <!-- You can add logo for your CoronaVirus -->
-    <!-- <img src="" alt="Logo" width="100" height="100"> -->
-  </a>
-</p>
-
-# Corona Virus Database
+### Corona Virus Database
 
 I have used web scraping to collect the data and stored it into a .json file and further using the .json file to add to SQLite Database and also trying to make an API using Flask.
 
@@ -50,7 +43,7 @@ I have used web scraping to collect the data and stored it into a .json file and
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-- [Python](https://www.python.org/)
+- [Python 3.6 or greater](https://www.python.org/)
 
 <!-- GETTING STARTED -->
 
@@ -60,28 +53,41 @@ This is an example of how you may give instructions on setting up your project l
 To get a local copy up and running follow these simple example steps.
 
 ### Installation
-
-Clone the repo
+*NOTE: If running `python` does not work for you, use what you normally use to envoke python. Some things to try are `py` (for windows) and `python3` (for bash).*
+1. Clone the repo
 
 ```sh
  git clone https://github.com/swapnanildutta/CoronavirusDatabase.git
 ```
 
-Change the dir
+2. Move into the cloned directory
 
 ```sh
 cd CoronavirusDatabse
 ```
 
-<!-- You can change the cmd if you want -->
+3. Create a [virtual environment](https://docs.python.org/3/tutorial/venv.html) and set it up (Optional)
+```sh
+python -m venv coronavirus_venv
+```
+##### On Windows:
+```sh
+coronavirus_venv\Scripts\activate
+```
+##### On Bash (Mac or Linux):
+```sh
+source coronavirus_venv/bin/activate
+```
+Your terminal should now be something like `(coronavirus_venv) Some\path $`
 
-Run CoronavirusDatabse
-
+4. Install the requirements
+```sh
+python -m pip install -r requirements.txt`
+```
+5. Run CoronavirusDatabse
 ```sh
 python coronavirusweb.py
 ```
-
-<!-- USAGE EXAMPLES -->
 
 ## Usage
 
