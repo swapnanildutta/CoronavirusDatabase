@@ -43,7 +43,7 @@ I have used web scraping to collect the data and stored it into a .json file and
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-- [Python 3.6 or greater](https://www.python.org/)
+- [Python 3](https://www.python.org/)
 
 <!-- GETTING STARTED -->
 
