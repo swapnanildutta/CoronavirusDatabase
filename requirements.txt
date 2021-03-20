@@ -11,7 +11,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
-pycodestyle==2.6.0
+pycodestyle==2.7.0
 pyflakes==2.2.0
 requests==2.25.1
 soupsieve==2.2
